@@ -1,0 +1,70 @@
+body {
+  background: #f0f0f0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 50px;
+}
+
+.background-fade {
+  background: rgba(0, 0, 255, 0.5); /* Semi-transparent blue background */
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.shadow-text {
+  color: #ffffff; /* White text */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow with RGBA */
+  margin-bottom: 20px;
+}
+
+.rgba-button {
+  background: rgba(255, 0, 0, 0.8); /* Solid red with opacity */
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.rgba-button:hover {
+  background: rgba(0, 255, 0, 0.8); /* Change to green on hover */
+}
+
+a {
+  color: #0000ff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #ff0000; /* Change color smoothly on hover */
+}
+
+.animated-button {
+  background: rgba(255, 0, 0, 0.8); /* Solid red with opacity */
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+.animated-button:active {
+  transform: scale(1.1); /* Slightly increase size on click */
+}
+
+.rotating-icon {
+  display: inline-block;
+  animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
